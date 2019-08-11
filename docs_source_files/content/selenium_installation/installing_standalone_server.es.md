@@ -1,23 +1,10 @@
 ---
-title: "Instalación del servidor Standalone"
+title: "Instalación del servidor independiente (_standalone_)"
 weight: 3
 ---
 
-{{% notice info %}}
-<i class="fas fa-language"></i> Page being translated from 
-English to Spanish. Do you speak Spanish? Help us to translate
-it by sending us pull requests!
-{{% /notice %}}
-
-If you plan to use [Grid]({{< ref "/grid/_index.md" >}}) then you should download the
-[selenium-server-standalone JAR](//www.seleniumhq.org/download/) file.
- The _selenium-server-standalone_ jar is never uploaded, but all the components are available via
- [selenium-server](//repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-server/).
- The standalone JAR contains everything, including the remote Selenium server
- and the client-side bindings.
- This means that if you use the selenium-server-standalone jar
- in your project, then you don't have to add selenium-java
- or a browser specific jar.
+ 
+Si planea usar [Grid]({{< ref "/grid/_index.md">}}) entonces debe descargar el archivo JAR [selenium-server-standalone](//www.seleniumhq.org/download/). El jar _selenium-server-standalone_ nunca se carga al proyecto, pero todos los componentes están disponibles a través de [selenium-server](//repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-server/). El JAR independiente contiene todo, incluido el servidor remoto de Selenium y las librerías del lado del cliente. Esto significa que si utiliza el jar de selenium-server-standalone en su proyecto, entonces no tiene que agregar selenium-java o un jar específico del navegador.
 
  ```xml
 <dependency>
@@ -26,3 +13,4 @@ If you plan to use [Grid]({{< ref "/grid/_index.md" >}}) then you should downloa
   <version>3.X</version>
 </dependency>
 ```
+
